@@ -22,7 +22,7 @@
     },
     "personalInformation": {
       "identity": "PUBLIC",
-      "Citizenship": "American"
+      "citizenship": "American"
     }
   },
   {
@@ -44,7 +44,7 @@
     },
     "personalInformation": {
       "identity": "PUBLIC",
-      "Citizenship": "American, Sakaaran"
+      "citizenship": "American, Sakaaran"
     }
   },
   {
@@ -67,7 +67,7 @@
     },
     "personalInformation": {
       "identity": "NO_DUAL",
-      "Citizenship": "Asgardian"
+      "citizenship": "Asgardian"
     }
   },
   {
@@ -89,7 +89,7 @@
     },
     "personalInformation": {
       "identity": "PUBLIC",
-      "Citizenship": "American, Bulgarian"
+      "citizenship": "American, Bulgarian"
     }
   },
   {
@@ -111,7 +111,7 @@
     },
     "personalInformation": {
       "identity": "PUBLIC",
-      "Citizenship": "American"
+      "citizenship": "American"
     }
   },
   {
@@ -134,7 +134,7 @@
     },
     "personalInformation": {
       "identity": "PUBLIC",
-      "Citizenship": "American"
+      "citizenship": "American"
     }
   },
   {
@@ -159,7 +159,7 @@
     },
     "personalInformation": {
       "identity": "PUBLIC",
-      "Citizenship": "American"
+      "citizenship": "American"
     }
   },
   {
@@ -181,7 +181,7 @@
     },
     "personalInformation": {
       "identity": "PUBLIC",
-      "Citizenship": "American, Serbian"
+      "citizenship": "American, Serbian"
     }
   },
   {
@@ -203,7 +203,7 @@
     },
     "personalInformation": {
       "identity": "PUBLIC",
-      "Citizenship": "Russian, Soviet"
+      "citizenship": "Russian, Soviet"
     }
   },
   {
@@ -225,7 +225,7 @@
     },
     "personalInformation": {
       "identity": "PUBLIC",
-      "Citizenship": "American"
+      "citizenship": "American"
     }
   },
   {
@@ -246,7 +246,7 @@
     },
     "personalInformation": {
       "identity": "SECRET",
-      "Citizenship": "Chinese"
+      "citizenship": "Chinese"
     }
   },
   {
@@ -270,7 +270,7 @@
     },
     "personalInformation": {
       "identity": "PUBLIC",
-      "Citizenship": "American"
+      "citizenship": "American"
     }
   },
   {
@@ -293,7 +293,7 @@
     },
     "personalInformation": {
       "identity": "SECRET",
-      "Citizenship": "American"
+      "citizenship": "American"
     }
   },
   {
@@ -314,7 +314,7 @@
     },
     "personalInformation": {
       "identity": "PUBLIC",
-      "Citizenship": "American, Australien"
+      "citizenship": "American, Australien"
     }
   },
   {
@@ -335,7 +335,7 @@
     },
     "personalInformation": {
       "identity": "PUBLIC",
-      "Citizenship": "American"
+      "citizenship": "American"
     }
   },
   {
@@ -357,7 +357,7 @@
     },
     "personalInformation": {
       "identity": "PUBLIC",
-      "Citizenship": "American"
+      "citizenship": "American"
     }
   },
   {
@@ -378,7 +378,7 @@
     },
     "personalInformation": {
       "identity": "PUBLIC",
-      "Citizenship": "Russian"
+      "citizenship": "Russian"
     }
   },
   {
@@ -401,7 +401,7 @@
     },
     "personalInformation": {
       "identity": "PUBLIC",
-      "Citizenship": "American"
+      "citizenship": "American"
     }
   },
   {
@@ -422,7 +422,7 @@
     },
     "personalInformation": {
       "identity": "SECRET",
-      "Citizenship": "American"
+      "citizenship": "American"
     }
   },
   {
@@ -448,7 +448,7 @@
     },
     "personalInformation": {
       "identity": "SECRET",
-      "Citizenship": "American"
+      "citizenship": "American"
     }
   },
   {
@@ -469,7 +469,7 @@
     },
     "personalInformation": {
       "identity": "PUBLIC",
-      "Citizenship": "Jotun"
+      "citizenship": "Jotun"
     }
   },
   {
@@ -491,7 +491,7 @@
     },
     "personalInformation": {
       "identity": "SECRET",
-      "Citizenship": "American"
+      "citizenship": "American"
     }
   }
 ]
