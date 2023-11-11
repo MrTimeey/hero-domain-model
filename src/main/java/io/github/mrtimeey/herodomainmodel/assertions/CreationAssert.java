@@ -1,53 +1,62 @@
 package io.github.mrtimeey.herodomainmodel.assertions;
 
 import io.github.mrtimeey.herodomainmodel.model.Appearance;
-import io.github.mrtimeey.herodomainmodel.model.Gender;
-import io.github.mrtimeey.herodomainmodel.model.LivingStatus;
-import io.github.mrtimeey.herodomainmodel.model.SuperHero;
+import io.github.mrtimeey.herodomainmodel.model.Creation;
 import org.assertj.core.api.AbstractObjectAssert;
 import org.assertj.core.api.Assertions;
 
-public class AppearanceAssert extends AbstractObjectAssert<AppearanceAssert, Appearance> {
+public class CreationAssert extends AbstractObjectAssert<CreationAssert, Creation> {
 
-   public AppearanceAssert(Appearance actual) {
-      super(actual, Appearance.class);
+   private static Appearance savedAppearance;
+
+   public CreationAssert(Creation actual) {
+      super(actual, CreationAssert.class);
    }
 
-   public static AppearanceAssert assertThat(Appearance actual) {
-      return new AppearanceAssert(actual);
+   public static CreationAssert assertThat(Creation actual) {
+      return new CreationAssert(actual);
    }
 
-   public AppearanceAssert hasReality(String reality) {
+   public static CreationAssert assertThat(Creation actual, Appearance appearance) {
+      savedAppearance = appearance;
+      return new CreationAssert(actual);
+   }
+
+   public CreationAssert hasCreators(String creators) {
       isNotNull();
-      Assertions.assertThat(actual.reality()).isEqualTo(reality);
+      Assertions.assertThat(actual.creators()).isEqualTo(creators);
       return this;
    }
 
-   public AppearanceAssert hasLivingStatus(LivingStatus... livingStatuses) {
+   public CreationAssert hasFirstAppearance(String... firstAppearances) {
       isNotNull();
-      Assertions.assertThat(actual.livingStatuses()).contains(livingStatuses);
+      Assertions.assertThat(actual.firstAppearances()).contains(firstAppearances);
       return this;
    }
 
-   public AppearanceAssert hasOnlyLivingStatus(LivingStatus... livingStatuses) {
+   public CreationAssert hasOnlyFirstAppearance(String... firstAppearances) {
       isNotNull();
-      Assertions.assertThat(actual.livingStatuses()).containsExactly(livingStatuses);
+      Assertions.assertThat(actual.firstAppearances()).containsExactly(firstAppearances);
       return this;
    }
 
-   public AppearanceAssert doesNotHaveLivingStatus(LivingStatus... livingStatuses) {
+   public CreationAssert doesNotHaveFirstAppearance(String... firstAppearances) {
       isNotNull();
-      Assertions.assertThat(actual.livingStatuses()).doesNotContain(livingStatuses);
+      Assertions.assertThat(actual.firstAppearances()).doesNotContain(firstAppearances);
       return this;
    }
 
-   public AppearanceAssert hasNoLivingStatus() {
+   public CreationAssert hasNoFirstAppearance() {
       isNotNull();
-      Assertions.assertThat(actual.livingStatuses()).isEmpty();
+      Assertions.assertThat(actual.firstAppearances()).isEmpty();
       return this;
    }
 
-
-
+   public AppearanceAssert toAppearance() {
+      if (savedAppearance == null) {
+         failWithMessage("Invalid use of mapping! Can only be called if Appearance was visited!");
+      }
+      return AppearanceAssert.assertThat(savedAppearance);
+   }
 
 }
