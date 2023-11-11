@@ -1,5 +1,8 @@
 package io.github.mrtimeey.herodomainmodel.core;
 
+import io.github.mrtimeey.herodomainmodel.assertions.Assertions;
+import io.github.mrtimeey.herodomainmodel.model.Gender;
+import io.github.mrtimeey.herodomainmodel.model.Identity;
 import io.github.mrtimeey.herodomainmodel.model.SuperHero;
 import org.junit.jupiter.api.Test;
 
@@ -36,6 +39,13 @@ class HeroFactoryTest {
       Optional<SuperHero> result = HeroFactory.hero(h -> "Hulk".equals(h.currentAlias()));
 
       assertThat(result).isPresent();
+      Assertions.assertThat(result.get())
+            .hasAlias("Hulk")
+            .hasName("Dr. Robert Bruce Banner")
+            .mapToPersonalInformation()
+            .hasIdentity(Identity.PUBLIC)
+            .mapToSuperHero()
+            .hasGender(Gender.MALE);
    }
 
 }
