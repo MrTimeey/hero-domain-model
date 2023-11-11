@@ -1,4 +1,4 @@
-package io.github.mrtimeey.herodomainmodel.core.data;
+package io.github.mrtimeey.herodomainmodel.core;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import io.github.mrtimeey.herodomainmodel.model.SuperHero;
@@ -11,8 +11,8 @@ import java.util.List;
 
 final class DataLoader {
 
-   private static List<SuperHero> getAllHeroes() {
-      try (InputStream resource = DataLoader.class.getClass().getResourceAsStream("heroes.json")) {
+   protected static List<SuperHero> getAllHeroes() {
+      try (InputStream resource = DataLoader.class.getResourceAsStream("heroes.json")) {
          String inputObject = IOUtils.toString(resource, StandardCharsets.UTF_8);
          TypeReference<List<SuperHero>> typeReference = new TypeReference<>() {
          };

@@ -1,4 +1,4 @@
-package io.github.mrtimeey.herodomainmodel.core.data;
+package io.github.mrtimeey.herodomainmodel.core;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
