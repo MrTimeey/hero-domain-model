@@ -11,7 +11,11 @@ import java.util.List;
 
 final class DataLoader {
 
-   protected static List<SuperHero> getAllHeroes() {
+   private DataLoader() {
+      throw new IllegalStateException("Do not instantiate this class");
+   }
+
+   static List<SuperHero> getAllHeroes() {
       try (InputStream resource = DataLoader.class.getResourceAsStream("heroes.json")) {
          String inputObject = IOUtils.toString(resource, StandardCharsets.UTF_8);
          TypeReference<List<SuperHero>> typeReference = new TypeReference<>() {
