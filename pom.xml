@@ -166,7 +166,7 @@
 
     <profiles>
         <profile>
-            <id>ci-cd</id>
+            <id>ossrh</id>
             <build>
                 <plugins>
                     <plugin>
