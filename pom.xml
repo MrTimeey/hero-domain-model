@@ -3,11 +3,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>io.github.mrtimeey</groupId>
-    <artifactId>object-finder</artifactId>
+    <artifactId>hero-domain-model</artifactId>
     <version>${revision}</version>
-    <name>object-finder</name>
-    <description>Library for finding objects in complex data structures</description>
-    <url>https://github.com/MrTimeey/object-finder</url>
+    <name>hero-domain-model</name>
+    <description>Hero domain model with dummy data. Primarily used for testing purposes.</description>
+    <url>https://github.com/MrTimeey/hero-domain-model</url>
     <properties>
         <!-- Project Properties -->
         <revision>1.0.0-SNAPSHOT</revision>
@@ -33,7 +33,7 @@
     <licenses>
         <license>
             <name>MIT License</name>
-            <url>https://github.com/MrTimeey/object-finder/blob/main/LICENSE</url>
+            <url>https://github.com/MrTimeey/hero-domain-model/blob/main/LICENSE</url>
         </license>
     </licenses>
     <developers>
@@ -44,9 +44,9 @@
         </developer>
     </developers>
     <scm>
-        <connection>scm:git:git@github.com:MrTimeey/object-finder.git</connection>
-        <developerConnection>scm:git:ssh://github.com:MrTimeey/object-finder.git</developerConnection>
-        <url>https://github.com/MrTimeey/object-finder/tree/main</url>
+        <connection>scm:git:git@github.com:MrTimeey/hero-domain-model.git</connection>
+        <developerConnection>scm:git:ssh://github.com:MrTimeey/hero-domain-model.git</developerConnection>
+        <url>https://github.com/MrTimeey/hero-domain-model/tree/main</url>
     </scm>
     <dependencyManagement>
         <dependencies>
