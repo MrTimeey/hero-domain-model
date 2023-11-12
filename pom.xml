@@ -10,7 +10,7 @@
     <url>https://github.com/MrTimeey/hero-domain-model</url>
     <properties>
         <!-- Project Properties -->
-        <revision>1.0.0-SNAPSHOT</revision>
+        <revision>0.0.42-SNAPSHOT</revision>
         <java.version>17</java.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
