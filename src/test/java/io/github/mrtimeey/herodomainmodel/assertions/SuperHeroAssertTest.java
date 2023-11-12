@@ -1,6 +1,5 @@
 package io.github.mrtimeey.herodomainmodel.assertions;
 
-import io.github.mrtimeey.herodomainmodel.core.HeroFactory;
 import io.github.mrtimeey.herodomainmodel.model.Appearance;
 import io.github.mrtimeey.herodomainmodel.model.Creation;
 import io.github.mrtimeey.herodomainmodel.model.Gender;
@@ -12,18 +11,31 @@ import org.junit.jupiter.api.Test;
 
 import static io.github.mrtimeey.herodomainmodel.model.Identity.PUBLIC;
 import static io.github.mrtimeey.herodomainmodel.model.LivingStatus.ALIVE;
-import static io.github.mrtimeey.herodomainmodel.model.LivingStatus.DECEASED;
 import static io.github.mrtimeey.herodomainmodel.model.LivingStatus.FORMERLY_DECEASED;
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.fail;
 
-class CustomAssertionTest {
+class SuperHeroAssertTest {
 
    private SuperHero hero;
 
    @BeforeEach
    void setup() {
-      hero = HeroFactory.hero(h -> "Hulk".equals(h.currentAlias())).orElseThrow();
+      hero = SuperHero.of(
+            "Dr. Robert Bruce Banner",
+            "Hulk",
+            Gender.MALE,
+            Appearance.of(
+                  "Earth-616",
+                  Creation.of(
+                        "Stan Lee, Jack Kirby",
+                        "Incredible Hulk #1 (March, 1962)"
+                  ),
+                  ALIVE, FORMERLY_DECEASED
+            ),
+            PersonalInformation.of(
+                  Identity.PUBLIC,
+                  "American, Sakaaran"
+            )
+      );
    }
 
    @Test
