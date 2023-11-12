@@ -1,25 +1,20 @@
 package io.github.mrtimeey.herodomainmodel.assertions;
 
-import io.github.mrtimeey.herodomainmodel.model.Appearance;
 import io.github.mrtimeey.herodomainmodel.model.Creation;
 import org.assertj.core.api.AbstractObjectAssert;
 import org.assertj.core.api.Assertions;
 
 public class CreationAssert extends AbstractObjectAssert<CreationAssert, Creation> {
 
-   private static Appearance savedAppearance;
+   private AppearanceAssert savedAppearance;
 
    public CreationAssert(Creation actual) {
       super(actual, CreationAssert.class);
    }
 
-   public static CreationAssert assertThat(Creation actual) {
-      return new CreationAssert(actual);
-   }
-
-   public static CreationAssert assertThat(Creation actual, Appearance appearance) {
+   public CreationAssert(Creation actual, AppearanceAssert appearance) {
+      super(actual, CreationAssert.class);
       savedAppearance = appearance;
-      return new CreationAssert(actual);
    }
 
    public CreationAssert hasCreators(String creators) {
@@ -52,11 +47,11 @@ public class CreationAssert extends AbstractObjectAssert<CreationAssert, Creatio
       return this;
    }
 
-   public AppearanceAssert toAppearance() {
+   public AppearanceAssert mapToAppearance() {
       if (savedAppearance == null) {
          failWithMessage("Invalid use of mapping! Can only be called if Appearance was visited!");
       }
-      return AppearanceAssert.assertThat(savedAppearance);
+      return savedAppearance;
    }
 
 }

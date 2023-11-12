@@ -1,6 +1,8 @@
 package io.github.mrtimeey.herodomainmodel.assertions;
 
+import io.github.mrtimeey.herodomainmodel.model.Appearance;
 import io.github.mrtimeey.herodomainmodel.model.Gender;
+import io.github.mrtimeey.herodomainmodel.model.PersonalInformation;
 import io.github.mrtimeey.herodomainmodel.model.SuperHero;
 import org.assertj.core.api.AbstractObjectAssert;
 import org.assertj.core.api.Assertions;
@@ -9,10 +11,6 @@ public class SuperHeroAssert extends AbstractObjectAssert<SuperHeroAssert, Super
 
    public SuperHeroAssert(SuperHero actual) {
       super(actual, SuperHeroAssert.class);
-   }
-
-   public static SuperHeroAssert assertThat(SuperHero actual) {
-      return new SuperHeroAssert(actual);
    }
 
    public SuperHeroAssert hasName(String name) {
@@ -33,12 +31,24 @@ public class SuperHeroAssert extends AbstractObjectAssert<SuperHeroAssert, Super
       return this;
    }
 
+   public SuperHeroAssert hasPersonalInformation(PersonalInformation personalInformation) {
+      isNotNull();
+      Assertions.assertThat(actual.personalInformation()).isEqualTo(personalInformation);
+      return this;
+   }
+
+   public SuperHeroAssert hasAppearance(Appearance appearance) {
+      isNotNull();
+      Assertions.assertThat(actual.appearance()).isEqualTo(appearance);
+      return this;
+   }
+
    public AppearanceAssert mapToAppearance() {
-      return AppearanceAssert.assertThat(actual.appearance(), actual);
+      return new AppearanceAssert(actual.appearance(), this);
    }
 
    public PersonalInformationAssert mapToPersonalInformation() {
-      return PersonalInformationAssert.assertThat(actual.personalInformation(), actual);
+      return new PersonalInformationAssert(actual.personalInformation(), this);
    }
 
 

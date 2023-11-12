@@ -2,25 +2,20 @@ package io.github.mrtimeey.herodomainmodel.assertions;
 
 import io.github.mrtimeey.herodomainmodel.model.Identity;
 import io.github.mrtimeey.herodomainmodel.model.PersonalInformation;
-import io.github.mrtimeey.herodomainmodel.model.SuperHero;
 import org.assertj.core.api.AbstractObjectAssert;
 import org.assertj.core.api.Assertions;
 
 public class PersonalInformationAssert extends AbstractObjectAssert<PersonalInformationAssert, PersonalInformation> {
 
-   private static SuperHero savedSuperHero;
+   private SuperHeroAssert savedSuperHero;
 
    public PersonalInformationAssert(PersonalInformation actual) {
       super(actual, PersonalInformationAssert.class);
    }
 
-   public static PersonalInformationAssert assertThat(PersonalInformation actual) {
-      return new PersonalInformationAssert(actual);
-   }
-
-   public static PersonalInformationAssert assertThat(PersonalInformation actual, SuperHero superHero) {
+   public PersonalInformationAssert(PersonalInformation actual, SuperHeroAssert superHero) {
+      super(actual, PersonalInformationAssert.class);
       savedSuperHero = superHero;
-      return new PersonalInformationAssert(actual);
    }
 
    public PersonalInformationAssert hasIdentity(Identity identity) {
@@ -39,7 +34,7 @@ public class PersonalInformationAssert extends AbstractObjectAssert<PersonalInfo
       if (savedSuperHero == null) {
          failWithMessage("Invalid use of mapping! Can only be called if SuperHero was visited!");
       }
-      return SuperHeroAssert.assertThat(savedSuperHero);
+      return savedSuperHero;
    }
 
 }

@@ -7,6 +7,10 @@ import io.github.mrtimeey.herodomainmodel.model.SuperHero;
 
 public class Assertions {
 
+   protected Assertions() {
+      // empty
+   }
+
    public static SuperHeroAssert assertThat(SuperHero superHero) {
       return new SuperHeroAssert(superHero);
    }
@@ -21,10 +25,6 @@ public class Assertions {
 
    public static PersonalInformationAssert assertThat(PersonalInformation personalInformation) {
       return new PersonalInformationAssert(personalInformation);
-   }
-
-   protected Assertions() {
-      // empty
    }
 
 }

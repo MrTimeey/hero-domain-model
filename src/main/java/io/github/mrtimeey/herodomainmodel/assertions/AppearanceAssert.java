@@ -2,27 +2,21 @@ package io.github.mrtimeey.herodomainmodel.assertions;
 
 import io.github.mrtimeey.herodomainmodel.model.Appearance;
 import io.github.mrtimeey.herodomainmodel.model.Creation;
-import io.github.mrtimeey.herodomainmodel.model.Gender;
 import io.github.mrtimeey.herodomainmodel.model.LivingStatus;
-import io.github.mrtimeey.herodomainmodel.model.SuperHero;
 import org.assertj.core.api.AbstractObjectAssert;
 import org.assertj.core.api.Assertions;
 
 public class AppearanceAssert extends AbstractObjectAssert<AppearanceAssert, Appearance> {
 
-   private static SuperHero savedSuperHero;
+   private SuperHeroAssert savedSuperHero;
 
    public AppearanceAssert(Appearance actual) {
       super(actual, AppearanceAssert.class);
    }
 
-   public static AppearanceAssert assertThat(Appearance actual) {
-      return new AppearanceAssert(actual);
-   }
-
-   public static AppearanceAssert assertThat(Appearance actual, SuperHero superHero) {
+   public AppearanceAssert(Appearance actual, SuperHeroAssert superHero) {
+      super(actual, AppearanceAssert.class);
       savedSuperHero = superHero;
-      return new AppearanceAssert(actual);
    }
 
    public AppearanceAssert hasReality(String reality) {
@@ -61,15 +55,15 @@ public class AppearanceAssert extends AbstractObjectAssert<AppearanceAssert, App
       return this;
    }
 
-   public CreationAssert toCreation() {
-      return CreationAssert.assertThat(actual.creation(), actual);
+   public CreationAssert mapToCreation() {
+      return new CreationAssert(actual.creation(), this);
    }
 
-   public SuperHeroAssert toSuperHero() {
+   public SuperHeroAssert mapToSuperHero() {
       if (savedSuperHero == null) {
          failWithMessage("Invalid use of mapping! Can only be called if SuperHero was visited!");
       }
-      return SuperHeroAssert.assertThat(savedSuperHero);
+      return savedSuperHero;
    }
 
 }
