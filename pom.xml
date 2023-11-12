@@ -160,7 +160,6 @@
                 <artifactId>maven-failsafe-plugin</artifactId>
                 <version>${maven-failsafe-plugin.version}</version>
             </plugin>
-
         </plugins>
     </build>
 
