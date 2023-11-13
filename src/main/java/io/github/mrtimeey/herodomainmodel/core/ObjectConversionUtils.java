@@ -3,6 +3,7 @@ package io.github.mrtimeey.herodomainmodel.core;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.github.sfrick.jcontrols.Try;
 
 import java.util.Optional;
 
@@ -15,12 +16,7 @@ final class ObjectConversionUtils {
    }
 
    static <T> Optional<T> toObject(String objString, TypeReference<T> typeReference) {
-      try {
-         T value = om.readValue(objString, typeReference);
-         return Optional.of(value);
-      } catch (Exception e) {
-         return Optional.empty();
-      }
+      return Try.of(() -> om.readValue(objString, typeReference)).toOptional();
    }
 
 }

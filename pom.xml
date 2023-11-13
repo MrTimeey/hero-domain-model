@@ -16,9 +16,10 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- Third Party Dependencies -->
-        <commons-io.version>2.13.0</commons-io.version>
-        <jackson.version>2.15.2</jackson.version>
-        <junit.version>5.9.3</junit.version>
+        <jcontrols.version>0.3.0</jcontrols.version>
+        <commons-io.version>2.15.0</commons-io.version>
+        <jackson.version>2.15.3</jackson.version>
+        <junit.version>5.10.1</junit.version>
         <assertj.version>3.24.2</assertj.version>
         <!-- Plugins -->
         <nexus-staging-plugin.version>1.6.13</nexus-staging-plugin.version>
@@ -83,6 +84,11 @@
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>${commons-io.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.s-frick</groupId>
+            <artifactId>controls</artifactId>
+            <version>${jcontrols.version}</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
