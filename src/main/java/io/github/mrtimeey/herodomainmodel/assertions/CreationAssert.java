@@ -17,9 +17,9 @@ public class CreationAssert extends AbstractObjectAssert<CreationAssert, Creatio
       savedAppearance = appearance;
    }
 
-   public CreationAssert hasCreators(String creators) {
+   public CreationAssert hasCreator(String... creators) {
       isNotNull();
-      Assertions.assertThat(actual.creators()).isEqualTo(creators);
+      Assertions.assertThat(actual.creators()).contains(creators);
       return this;
    }
 
@@ -35,15 +35,33 @@ public class CreationAssert extends AbstractObjectAssert<CreationAssert, Creatio
       return this;
    }
 
+   public CreationAssert hasOnlyCreator(String... creators) {
+      isNotNull();
+      Assertions.assertThat(actual.creators()).containsExactly(creators);
+      return this;
+   }
+
    public CreationAssert doesNotHaveFirstAppearance(String... firstAppearances) {
       isNotNull();
       Assertions.assertThat(actual.firstAppearances()).doesNotContain(firstAppearances);
       return this;
    }
 
+   public CreationAssert doesNotHaveCreator(String... creators) {
+      isNotNull();
+      Assertions.assertThat(actual.creators()).doesNotContain(creators);
+      return this;
+   }
+
    public CreationAssert hasNoFirstAppearance() {
       isNotNull();
       Assertions.assertThat(actual.firstAppearances()).isEmpty();
+      return this;
+   }
+
+   public CreationAssert hasNoCreators() {
+      isNotNull();
+      Assertions.assertThat(actual.creators()).isEmpty();
       return this;
    }
 

@@ -9,6 +9,8 @@ import io.github.mrtimeey.herodomainmodel.model.SuperHero;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.List;
+
 import static io.github.mrtimeey.herodomainmodel.model.Identity.PUBLIC;
 import static io.github.mrtimeey.herodomainmodel.model.LivingStatus.ALIVE;
 import static io.github.mrtimeey.herodomainmodel.model.LivingStatus.DECEASED;
@@ -28,8 +30,8 @@ class AssertMappingTest {
             Appearance.of(
                   "Earth-616",
                   Creation.of(
-                        "Stan Lee, Jack Kirby",
-                        "Incredible Hulk #1 (March, 1962)"
+                        List.of("Stan Lee", "Jack Kirby"),
+                        List.of("Incredible Hulk #1 (March, 1962)")
                   ),
                   ALIVE, FORMERLY_DECEASED
             ),
@@ -53,7 +55,7 @@ class AssertMappingTest {
             .hasOnlyLivingStatus(ALIVE, FORMERLY_DECEASED)
             .doesNotHaveLivingStatus(DECEASED)
             .mapToCreation()
-            .hasCreators("Stan Lee, Jack Kirby")
+            .hasCreator("Stan Lee", "Jack Kirby")
             .hasFirstAppearance("Incredible Hulk #1 (March, 1962)")
             .hasOnlyFirstAppearance("Incredible Hulk #1 (March, 1962)")
             .mapToAppearance()

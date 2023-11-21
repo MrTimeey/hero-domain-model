@@ -12,6 +12,7 @@ import io.github.mrtimeey.herodomainmodel.model.PersonalInformation;
 import io.github.mrtimeey.herodomainmodel.model.SuperHero;
 import org.junit.jupiter.api.Test;
 
+import java.util.Arrays;
 import java.util.List;
 
 import static io.github.mrtimeey.herodomainmodel.model.LivingStatus.ALIVE;
@@ -375,9 +376,10 @@ public class JsonDataTest {
    }
 
    private static Creation createCreation(String creators, String... appearances) {
+
       return Creation.of(
-            creators,
-            appearances
+            Arrays.stream(creators.split(",")).toList(),
+            Arrays.stream(appearances).toList()
       );
    }
 
