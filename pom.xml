@@ -21,6 +21,7 @@
         <jackson.version>2.16.0</jackson.version>
         <junit.version>5.10.1</junit.version>
         <assertj.version>3.24.2</assertj.version>
+        <snapshot-tests.version>1.10.1</snapshot-tests.version>
         <!-- Plugins -->
         <nexus-staging-plugin.version>1.6.13</nexus-staging-plugin.version>
         <maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
@@ -94,6 +95,18 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>de.skuzzle.test</groupId>
+            <artifactId>snapshot-tests-junit5</artifactId>
+            <version>${snapshot-tests.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>de.skuzzle.test</groupId>
+            <artifactId>snapshot-tests-json</artifactId>
+            <version>${snapshot-tests.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>

@@ -1,0 +1,359 @@
+dynamic-directory: false
+snapshot-name: createHeroJson_0
+snapshot-number: 0
+test-class: io.github.mrtimeey.herodomainmodel.core.JsonDataTest
+test-method: createHeroJson
+
+[ {
+  "name" : "Carol Susan Jane Denvers",
+  "currentAlias" : "Captain Marvel",
+  "gender" : "FEMALE",
+  "appearance" : {
+    "reality" : "Earth-616",
+    "creation" : {
+      "creators" : "Roy Thomas, Gene Colan",
+      "firstAppearances" : [ "Marvel Super-Heroes #13 (December, 1967) (As Carol Danvers)", "Ms. Marvel #1 (October, 1976) (As Ms. Marvel)", "Uncanny X-Men #164 (December, 1982) (As Binary)", "Avengers (Vol. 3) #4 (March, 1998) (As Warbird)", "Avenging Spider-Man #9 (July, 2012) (As Captain Marvel)" ]
+    },
+    "livingStatuses" : [ "ALIVE", "FORMERLY_DECEASED" ]
+  },
+  "personalInformation" : {
+    "identity" : "PUBLIC",
+    "citizenship" : "American"
+  }
+}, {
+  "name" : "Peter Benjamin Parker",
+  "currentAlias" : "Spider-Man",
+  "gender" : "MALE",
+  "appearance" : {
+    "reality" : "Earth-616",
+    "creation" : {
+      "creators" : "Stan Lee, Steve Ditko",
+      "firstAppearances" : [ "Amazing Fantasy #15 (June, 1962)" ]
+    },
+    "livingStatuses" : [ "ALIVE", "FORMERLY_DECEASED" ]
+  },
+  "personalInformation" : {
+    "identity" : "SECRET",
+    "citizenship" : "American"
+  }
+}, {
+  "name" : "Dr. Robert Bruce Banner",
+  "currentAlias" : "Hulk",
+  "gender" : "MALE",
+  "appearance" : {
+    "reality" : "Earth-616",
+    "creation" : {
+      "creators" : "Stan Lee, Jack Kirby",
+      "firstAppearances" : [ "Incredible Hulk #1 (March, 1962)" ]
+    },
+    "livingStatuses" : [ "ALIVE", "FORMERLY_DECEASED" ]
+  },
+  "personalInformation" : {
+    "identity" : "PUBLIC",
+    "citizenship" : "American, Sakaaran"
+  }
+}, {
+  "name" : "Thor Odinson",
+  "currentAlias" : "Thor",
+  "gender" : "MALE",
+  "appearance" : {
+    "reality" : "Earth-616",
+    "creation" : {
+      "creators" : "Don Rico, Hy Rosen, Stan Lee, Jack Kirby, Larry Lieber",
+      "firstAppearances" : [ "Venus #11 (July, 1950) (Golden Age)", "Journey Into Mystery #83 (June, 1962) (Silver Age)" ]
+    },
+    "livingStatuses" : [ "ALIVE", "FORMERLY_DECEASED" ]
+  },
+  "personalInformation" : {
+    "identity" : "NO_DUAL",
+    "citizenship" : "Asgardian"
+  }
+}, {
+  "name" : "Anthony Edward 'Tony' Stark",
+  "currentAlias" : "Iron Man",
+  "gender" : "MALE",
+  "appearance" : {
+    "reality" : "Earth-616",
+    "creation" : {
+      "creators" : "Stan Lee, Larry Lieber, Don Heck, Jack Kirby",
+      "firstAppearances" : [ "Tales of Suspense #39 (December, 1962)" ]
+    },
+    "livingStatuses" : [ "ALIVE", "FORMERLY_DECEASED" ]
+  },
+  "personalInformation" : {
+    "identity" : "PUBLIC",
+    "citizenship" : "American, Bulgarian"
+  }
+}, {
+  "name" : "Janet Van Dyne",
+  "currentAlias" : "Wasp",
+  "gender" : "FEMALE",
+  "appearance" : {
+    "reality" : "Earth-616",
+    "creation" : {
+      "creators" : "Stan Lee, Ernest Hart, Jack Kirby",
+      "firstAppearances" : [ "Tales to Astonish #44 (March, 1963)" ]
+    },
+    "livingStatuses" : [ "ALIVE", "FORMERLY_DECEASED" ]
+  },
+  "personalInformation" : {
+    "identity" : "PUBLIC",
+    "citizenship" : "American"
+  }
+}, {
+  "name" : "Scott Edward Harris Lang",
+  "currentAlias" : "Ant-Man",
+  "gender" : "MALE",
+  "appearance" : {
+    "reality" : "Earth-616",
+    "creation" : {
+      "creators" : "David Michelinie, John Byrne",
+      "firstAppearances" : [ "Avengers #181 (December, 1978) (As Scott Lang)", "Marvel Premiere #47 (January, 1979) (As Ant-Man)" ]
+    },
+    "livingStatuses" : [ "ALIVE", "FORMERLY_DECEASED" ]
+  },
+  "personalInformation" : {
+    "identity" : "PUBLIC",
+    "citizenship" : "American"
+  }
+}, {
+  "name" : "Clinton Francis 'Clint' Barton",
+  "currentAlias" : "Hawkeye",
+  "gender" : "MALE",
+  "appearance" : {
+    "reality" : "Earth-616",
+    "creation" : {
+      "creators" : "Stan Lee, Don Heck",
+      "firstAppearances" : [ "Tales of Suspense #57 (June, 1964) (As Hawkeye)", "Avengers #63 (February, 1969) (As Goliath)", "Captain America #179 (August, 1974) (As Golden Archer)", "New Avengers #27 (February, 2007) (As Ronin)" ]
+    },
+    "livingStatuses" : [ "ALIVE", "FORMERLY_DECEASED" ]
+  },
+  "personalInformation" : {
+    "identity" : "PUBLIC",
+    "citizenship" : "American"
+  }
+}, {
+  "name" : "Wanda Django Maximoff",
+  "currentAlias" : "Scarlet Witch",
+  "gender" : "FEMALE",
+  "appearance" : {
+    "reality" : "Earth-616",
+    "creation" : {
+      "creators" : "Stan Lee, Jack Kirby",
+      "firstAppearances" : [ "X-Men #4 (January, 1964)" ]
+    },
+    "livingStatuses" : [ "ALIVE", "FORMERLY_DECEASED" ]
+  },
+  "personalInformation" : {
+    "identity" : "PUBLIC",
+    "citizenship" : "American, Serbian"
+  }
+}, {
+  "name" : "Natalia Alianovna 'Natasha' Romanova",
+  "currentAlias" : "Black Widow",
+  "gender" : "FEMALE",
+  "appearance" : {
+    "reality" : "Earth-616",
+    "creation" : {
+      "creators" : "Stan Lee, Don Rico, Don Heck",
+      "firstAppearances" : [ "Tales of Suspense #52 (January, 1964)" ]
+    },
+    "livingStatuses" : [ "ALIVE", "FORMERLY_DECEASED" ]
+  },
+  "personalInformation" : {
+    "identity" : "PUBLIC",
+    "citizenship" : "Russian, Soviet"
+  }
+}, {
+  "name" : "Steven Grant 'Steve' Rogers",
+  "currentAlias" : "Captain America",
+  "gender" : "MALE",
+  "appearance" : {
+    "reality" : "Earth-616",
+    "creation" : {
+      "creators" : "Joe Simon, Jack Kirby",
+      "firstAppearances" : [ "Captain America Comics #1 (December, 1940)" ]
+    },
+    "livingStatuses" : [ "ALIVE", "FORMERLY_DECEASED" ]
+  },
+  "personalInformation" : {
+    "identity" : "PUBLIC",
+    "citizenship" : "American"
+  }
+}, {
+  "name" : "Unrevealed",
+  "currentAlias" : "Mister Negative",
+  "gender" : "MALE",
+  "appearance" : {
+    "reality" : "Earth-616",
+    "creation" : {
+      "creators" : "Dan Slott, Phil Jimenez",
+      "firstAppearances" : [ "Free Comic Book Day 2007 (Spider-Man) #1 (May, 2007)" ]
+    },
+    "livingStatuses" : [ "ALIVE" ]
+  },
+  "personalInformation" : {
+    "identity" : "SECRET",
+    "citizenship" : "Chinese"
+  }
+}, {
+  "name" : "Dr. Otto Gunther Octavius",
+  "currentAlias" : "Doctor Octopus",
+  "gender" : "MALE",
+  "appearance" : {
+    "reality" : "Earth-616",
+    "creation" : {
+      "creators" : "Stan Lee, Steve Ditko",
+      "firstAppearances" : [ "Amazing Spider-Man #3 (April, 1963) (As Doctor Octopus)", "Amazing Spider-Man #697 (November, 2012) (As Spider-Man)", "Amazing Spider-Man (Vol. 4) #25 (March, 2017) (As Superior Octopus)" ]
+    },
+    "livingStatuses" : [ "ALIVE", "FORMERLY_DECEASED" ]
+  },
+  "personalInformation" : {
+    "identity" : "PUBLIC",
+    "citizenship" : "American"
+  }
+}, {
+  "name" : "Jason Philip Macendale, Jr.",
+  "currentAlias" : "Hobgoblin",
+  "gender" : "MALE",
+  "appearance" : {
+    "reality" : "Earth-616",
+    "creation" : {
+      "creators" : "Stan Lee, Steve Ditko",
+      "firstAppearances" : [ "Amazing Spider-Man #3 (April, 1963) (As Doctor Octopus)", "Amazing Spider-Man #697 (November, 2012) (As Spider-Man)", "Amazing Spider-Man (Vol. 4) #25 (March, 2017) (As Superior Octopus)" ]
+    },
+    "livingStatuses" : [ "DECEASED" ]
+  },
+  "personalInformation" : {
+    "identity" : "SECRET",
+    "citizenship" : "American"
+  }
+}, {
+  "name" : "Frederick 'Fred' Myers",
+  "currentAlias" : "Boomerang",
+  "gender" : "MALE",
+  "appearance" : {
+    "reality" : "Earth-616",
+    "creation" : {
+      "creators" : "Stan Lee, Jack Kirby",
+      "firstAppearances" : [ "Tales to Astonish #81 (April, 1966)" ]
+    },
+    "livingStatuses" : [ "DECEASED" ]
+  },
+  "personalInformation" : {
+    "identity" : "PUBLIC",
+    "citizenship" : "American, Australien"
+  }
+}, {
+  "name" : "Adrian Toomes",
+  "currentAlias" : "Vulture",
+  "gender" : "MALE",
+  "appearance" : {
+    "reality" : "Earth-616",
+    "creation" : {
+      "creators" : "Stan Lee, Jack Kirby",
+      "firstAppearances" : [ "Amazing Spider-Man #2 (February, 1963)" ]
+    },
+    "livingStatuses" : [ "ALIVE" ]
+  },
+  "personalInformation" : {
+    "identity" : "PUBLIC",
+    "citizenship" : "American"
+  }
+}, {
+  "name" : "Maxwell 'Max' Dillon",
+  "currentAlias" : "Electro",
+  "gender" : "MALE",
+  "appearance" : {
+    "reality" : "Earth-616",
+    "creation" : {
+      "creators" : "Stan Lee, Steve Ditko",
+      "firstAppearances" : [ "Amazing Spider-Man #9 (November, 1963)" ]
+    },
+    "livingStatuses" : [ "ALIVE", "FORMERLY_DECEASED" ]
+  },
+  "personalInformation" : {
+    "identity" : "PUBLIC",
+    "citizenship" : "American"
+  }
+}, {
+  "name" : "Sergei Nikolaevich Kravinoff",
+  "currentAlias" : "Kraven the Hunter",
+  "gender" : "MALE",
+  "appearance" : {
+    "reality" : "Earth-616",
+    "creation" : {
+      "creators" : "Stan Lee, Steve Ditko",
+      "firstAppearances" : [ "Amazing Spider-Man #15 (May, 1964)" ]
+    },
+    "livingStatuses" : [ "DECEASED" ]
+  },
+  "personalInformation" : {
+    "identity" : "PUBLIC",
+    "citizenship" : "Russian"
+  }
+}, {
+  "name" : "Quentin Beck",
+  "currentAlias" : "Mysterio",
+  "gender" : "MALE",
+  "appearance" : {
+    "reality" : "Earth-616",
+    "creation" : {
+      "creators" : "Stan Lee, Steve Ditko",
+      "firstAppearances" : [ "Amazing Spider-Man #2 (February, 1963) (As Quentin Beck)", "Amazing Spider-Man #13 (March, 1964) (As Mysterio)" ]
+    },
+    "livingStatuses" : [ "ALIVE", "FORMERLY_DECEASED" ]
+  },
+  "personalInformation" : {
+    "identity" : "PUBLIC",
+    "citizenship" : "American"
+  }
+}, {
+  "name" : "William Baker",
+  "currentAlias" : "Sandman",
+  "gender" : "MALE",
+  "appearance" : {
+    "reality" : "Earth-616",
+    "creation" : {
+      "creators" : "Stan Lee, Steve Ditko",
+      "firstAppearances" : [ "Amazing Spider-Man #4 (June, 1963)" ]
+    },
+    "livingStatuses" : [ "ALIVE" ]
+  },
+  "personalInformation" : {
+    "identity" : "SECRET",
+    "citizenship" : "American"
+  }
+}, {
+  "name" : "Benjamin 'Ben' Reilly",
+  "currentAlias" : "Chasm",
+  "gender" : "MALE",
+  "appearance" : {
+    "reality" : "Earth-616",
+    "creation" : {
+      "creators" : "Gerry Conway, Ross Andru",
+      "firstAppearances" : [ "Amazing Spider-Man #149 (July, 1975) (As Spider-Clone)", "Spider-Man #52 (September, 1994) (As Scarlet Spider)", "Sensational Spider-Man #0 (January, 1996) (As Spider-Man)", "Free Comic Book Day 2016 (Captain America) #1 (May, 2016) (As The Jackal)", "Amazing Spider-Man (Vol. 5) #93 (March, 2022) (As Chasm)" ]
+    },
+    "livingStatuses" : [ "ALIVE", "FORMERLY_DECEASED" ]
+  },
+  "personalInformation" : {
+    "identity" : "SECRET",
+    "citizenship" : "American"
+  }
+}, {
+  "name" : "Loki Laufeyson",
+  "currentAlias" : "Loki",
+  "gender" : "FLUID",
+  "appearance" : {
+    "reality" : "Earth-616",
+    "creation" : {
+      "creators" : "Kieron Gillen, Stephanie Hans",
+      "firstAppearances" : [ "Journey Into Mystery #622 (April, 2011)" ]
+    },
+    "livingStatuses" : [ "ALIVE" ]
+  },
+  "personalInformation" : {
+    "identity" : "PUBLIC",
+    "citizenship" : "Jotun"
+  }
+} ]
