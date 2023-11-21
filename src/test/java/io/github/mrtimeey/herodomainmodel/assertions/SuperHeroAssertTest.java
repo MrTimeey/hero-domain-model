@@ -1,5 +1,6 @@
 package io.github.mrtimeey.herodomainmodel.assertions;
 
+import io.github.mrtimeey.herodomainmodel.model.Appearance;
 import io.github.mrtimeey.herodomainmodel.model.ArtInformation;
 import io.github.mrtimeey.herodomainmodel.model.Creation;
 import io.github.mrtimeey.herodomainmodel.model.Gender;
@@ -29,7 +30,7 @@ class SuperHeroAssertTest {
                   "Earth-616",
                   Creation.of(
                         List.of("Stan Lee", "Jack Kirby"),
-                        List.of("Incredible Hulk #1 (March, 1962)")
+                        List.of(Appearance.of("Incredible Hulk #1", "March, 1962"))
                   ),
                   ALIVE, FORMERLY_DECEASED
             ),
@@ -43,7 +44,7 @@ class SuperHeroAssertTest {
    @Test
    void testSuperHeroAssert() {
       PersonalInformation expectedPersonalInformation = PersonalInformation.of(PUBLIC, "American, Sakaaran");
-      Creation expectedCreation = Creation.of(List.of("Stan Lee", "Jack Kirby"), List.of("Incredible Hulk #1 (March, 1962)"));
+      Creation expectedCreation = Creation.of(List.of("Stan Lee", "Jack Kirby"), List.of(Appearance.of("Incredible Hulk #1", "March, 1962")));
       ArtInformation expectedArtInformation = ArtInformation.of("Earth-616", expectedCreation, ALIVE, FORMERLY_DECEASED);
 
       Assertions.assertThat(hero)

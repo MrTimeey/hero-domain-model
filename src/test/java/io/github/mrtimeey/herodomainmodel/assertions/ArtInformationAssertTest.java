@@ -1,5 +1,6 @@
 package io.github.mrtimeey.herodomainmodel.assertions;
 
+import io.github.mrtimeey.herodomainmodel.model.Appearance;
 import io.github.mrtimeey.herodomainmodel.model.ArtInformation;
 import io.github.mrtimeey.herodomainmodel.model.Creation;
 import org.junit.jupiter.api.BeforeEach;
@@ -21,7 +22,7 @@ class ArtInformationAssertTest {
             "Earth-616",
             Creation.of(
                   List.of("Stan Lee", "Jack Kirby"),
-                  List.of("Incredible Hulk #1 (March, 1962)")
+                  List.of(Appearance.of("Incredible Hulk #1", "March, 1962"))
             ),
             ALIVE, FORMERLY_DECEASED
       );
@@ -29,7 +30,7 @@ class ArtInformationAssertTest {
 
    @Test
    void testAssert() {
-      Creation expectedCreation = Creation.of(List.of("Stan Lee", "Jack Kirby"), List.of("Incredible Hulk #1 (March, 1962)"));
+      Creation expectedCreation = Creation.of(List.of("Stan Lee", "Jack Kirby"), List.of(Appearance.of("Incredible Hulk #1", "March, 1962")));
 
       Assertions.assertThat(artInformation)
             .hasReality("Earth-616")

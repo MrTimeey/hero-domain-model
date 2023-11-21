@@ -1,5 +1,6 @@
 package io.github.mrtimeey.herodomainmodel.assertions;
 
+import io.github.mrtimeey.herodomainmodel.model.Appearance;
 import io.github.mrtimeey.herodomainmodel.model.Creation;
 import org.assertj.core.api.AbstractObjectAssert;
 import org.assertj.core.api.Assertions;
@@ -23,13 +24,13 @@ public class CreationAssert extends AbstractObjectAssert<CreationAssert, Creatio
       return this;
    }
 
-   public CreationAssert hasFirstAppearance(String... firstAppearances) {
+   public CreationAssert hasFirstAppearance(Appearance... firstAppearances) {
       isNotNull();
       Assertions.assertThat(actual.firstAppearances()).contains(firstAppearances);
       return this;
    }
 
-   public CreationAssert hasOnlyFirstAppearance(String... firstAppearances) {
+   public CreationAssert hasOnlyFirstAppearance(Appearance... firstAppearances) {
       isNotNull();
       Assertions.assertThat(actual.firstAppearances()).containsExactly(firstAppearances);
       return this;
@@ -41,7 +42,7 @@ public class CreationAssert extends AbstractObjectAssert<CreationAssert, Creatio
       return this;
    }
 
-   public CreationAssert doesNotHaveFirstAppearance(String... firstAppearances) {
+   public CreationAssert doesNotHaveFirstAppearance(Appearance... firstAppearances) {
       isNotNull();
       Assertions.assertThat(actual.firstAppearances()).doesNotContain(firstAppearances);
       return this;

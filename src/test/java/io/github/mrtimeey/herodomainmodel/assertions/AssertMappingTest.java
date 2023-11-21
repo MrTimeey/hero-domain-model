@@ -1,5 +1,6 @@
 package io.github.mrtimeey.herodomainmodel.assertions;
 
+import io.github.mrtimeey.herodomainmodel.model.Appearance;
 import io.github.mrtimeey.herodomainmodel.model.ArtInformation;
 import io.github.mrtimeey.herodomainmodel.model.Creation;
 import io.github.mrtimeey.herodomainmodel.model.Gender;
@@ -31,7 +32,7 @@ class AssertMappingTest {
                   "Earth-616",
                   Creation.of(
                         List.of("Stan Lee", "Jack Kirby"),
-                        List.of("Incredible Hulk #1 (March, 1962)")
+                        List.of(Appearance.of("Incredible Hulk #1", "March, 1962"))
                   ),
                   ALIVE, FORMERLY_DECEASED
             ),
@@ -56,8 +57,8 @@ class AssertMappingTest {
             .doesNotHaveLivingStatus(DECEASED)
             .mapToCreation()
             .hasCreator("Stan Lee", "Jack Kirby")
-            .hasFirstAppearance("Incredible Hulk #1 (March, 1962)")
-            .hasOnlyFirstAppearance("Incredible Hulk #1 (March, 1962)")
+            .hasFirstAppearance(Appearance.of("Incredible Hulk #1", "March, 1962"))
+            .hasOnlyFirstAppearance(Appearance.of("Incredible Hulk #1", "March, 1962"))
             .mapToAppearance()
             .mapToSuperHero()
             .mapToPersonalInformation()

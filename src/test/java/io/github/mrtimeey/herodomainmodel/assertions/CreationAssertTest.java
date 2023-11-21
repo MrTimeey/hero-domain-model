@@ -1,5 +1,6 @@
 package io.github.mrtimeey.herodomainmodel.assertions;
 
+import io.github.mrtimeey.herodomainmodel.model.Appearance;
 import io.github.mrtimeey.herodomainmodel.model.Creation;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -14,7 +15,7 @@ class CreationAssertTest {
    void setup() {
       creation = Creation.of(
             List.of("Stan Lee", "Jack Kirby"),
-            List.of("Incredible Hulk #1 (March, 1962)")
+            List.of(Appearance.of("Incredible Hulk #1", "March, 1962"))
       );
    }
 
@@ -25,9 +26,9 @@ class CreationAssertTest {
             .hasOnlyCreator("Stan Lee", "Jack Kirby")
             .hasCreator("Stan Lee")
             .doesNotHaveCreator("Tim")
-            .hasFirstAppearance("Incredible Hulk #1 (March, 1962)")
-            .hasOnlyFirstAppearance("Incredible Hulk #1 (March, 1962)")
-            .doesNotHaveFirstAppearance("Avenging Spider-Man #9 (July, 2012) (As Captain Marvel)");
+            .hasFirstAppearance(Appearance.of("Incredible Hulk #1", "March, 1962"))
+            .hasOnlyFirstAppearance(Appearance.of("Incredible Hulk #1", "March, 1962"))
+            .doesNotHaveFirstAppearance(Appearance.of("Avenging Spider-Man #9", "July, 2012"));
    }
 
    @Test

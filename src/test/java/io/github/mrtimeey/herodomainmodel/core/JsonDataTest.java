@@ -1,8 +1,10 @@
 package io.github.mrtimeey.herodomainmodel.core;
 
+import de.skuzzle.test.snapshots.ForceUpdateSnapshots;
 import de.skuzzle.test.snapshots.Snapshot;
 import de.skuzzle.test.snapshots.data.json.JsonSnapshot;
 import de.skuzzle.test.snapshots.junit5.EnableSnapshotTests;
+import io.github.mrtimeey.herodomainmodel.model.Appearance;
 import io.github.mrtimeey.herodomainmodel.model.ArtInformation;
 import io.github.mrtimeey.herodomainmodel.model.Creation;
 import io.github.mrtimeey.herodomainmodel.model.Gender;
@@ -41,11 +43,11 @@ public class JsonDataTest {
                         "Earth-616",
                         createCreation(
                               "Roy Thomas, Gene Colan",
-                              "Marvel Super-Heroes #13 (December, 1967) (As Carol Danvers)",
-                              "Ms. Marvel #1 (October, 1976) (As Ms. Marvel)",
-                              "Uncanny X-Men #164 (December, 1982) (As Binary)",
-                              "Avengers (Vol. 3) #4 (March, 1998) (As Warbird)",
-                              "Avenging Spider-Man #9 (July, 2012) (As Captain Marvel)"
+                              Appearance.of("Marvel Super-Heroes #13", "December, 1967", "Carol Danvers"),
+                              Appearance.of("Ms. Marvel #1","October, 1976", "Ms. Marvel"),
+                              Appearance.of("Uncanny X-Men #164","December, 1982","Binary"),
+                              Appearance.of("Avengers (Vol. 3) #4","March, 1998","Warbird"),
+                              Appearance.of("Avenging Spider-Man #9","July, 2012", "Captain Marvel")
                         ),
                         ALIVE, FORMERLY_DECEASED
                   ),
@@ -58,7 +60,7 @@ public class JsonDataTest {
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Steve Ditko",
-                              "Amazing Fantasy #15 (June, 1962)"
+                               Appearance.of("Amazing Fantasy #15" ,"June, 1962")
                         ),
                         ALIVE, FORMERLY_DECEASED
                   ),
@@ -72,7 +74,7 @@ public class JsonDataTest {
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Jack Kirby",
-                              "Incredible Hulk #1 (March, 1962)"
+                               Appearance.of("Incredible Hulk #1" ,"March, 1962")
                         ),
                         ALIVE, FORMERLY_DECEASED
                   ),
@@ -86,8 +88,7 @@ public class JsonDataTest {
                         "Earth-616",
                         createCreation(
                               "Don Rico, Hy Rosen, Stan Lee, Jack Kirby, Larry Lieber",
-                              "Venus #11 (July, 1950) (Golden Age)",
-                              "Journey Into Mystery #83 (June, 1962) (Silver Age)"
+                              Appearance.of("Venus #11", "July, 1950")
                         ),
                         ALIVE, FORMERLY_DECEASED),
                   createPersonalInformation(Identity.NO_DUAL, "Asgardian")),
@@ -100,7 +101,7 @@ public class JsonDataTest {
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Larry Lieber, Don Heck, Jack Kirby",
-                              "Tales of Suspense #39 (December, 1962)"
+                               Appearance.of("Tales of Suspense #39" ,"December, 1962")
                         ),
                         ALIVE, FORMERLY_DECEASED
                   ),
@@ -114,7 +115,7 @@ public class JsonDataTest {
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Ernest Hart, Jack Kirby",
-                              "Tales to Astonish #44 (March, 1963)"
+                               Appearance.of("Tales to Astonish #44" ,"March, 1963")
                         ),
                         ALIVE, FORMERLY_DECEASED
                   ),
@@ -128,8 +129,8 @@ public class JsonDataTest {
                         "Earth-616",
                         createCreation(
                               "David Michelinie, John Byrne",
-                              "Avengers #181 (December, 1978) (As Scott Lang)",
-                              "Marvel Premiere #47 (January, 1979) (As Ant-Man)"
+                               Appearance.of("Avengers #181","December, 1978","Scott Lang"),
+                               Appearance.of("Marvel Premiere #47","January, 1979","Ant-Man")
                         ),
                         ALIVE, FORMERLY_DECEASED),
                   createPersonalInformation(Identity.PUBLIC, "American")
@@ -142,10 +143,10 @@ public class JsonDataTest {
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Don Heck",
-                              "Tales of Suspense #57 (June, 1964) (As Hawkeye)",
-                              "Avengers #63 (February, 1969) (As Goliath)",
-                              "Captain America #179 (August, 1974) (As Golden Archer)",
-                              "New Avengers #27 (February, 2007) (As Ronin)"
+                              Appearance.of("Tales of Suspense #57", "June, 1964" ,"Hawkeye"),
+                              Appearance.of("Avengers #63", "February, 1969" ,"Goliath"),
+                              Appearance.of("Captain America #179","August, 1974" ,"Golden Archer"),
+                              Appearance.of("New Avengers #27", "February, 2007" ,"Ronin")
                         ),
                         ALIVE, FORMERLY_DECEASED),
                   createPersonalInformation(Identity.PUBLIC, "American")
@@ -158,7 +159,7 @@ public class JsonDataTest {
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Jack Kirby",
-                              "X-Men #4 (January, 1964)"
+                               Appearance.of("X-Men #4" ,"January, 1964")
                         ),
                         ALIVE, FORMERLY_DECEASED
                   ),
@@ -172,7 +173,7 @@ public class JsonDataTest {
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Don Rico, Don Heck",
-                              "Tales of Suspense #52 (January, 1964)"
+                               Appearance.of("Tales of Suspense #52" ,"January, 1964")
                         ),
                         ALIVE, FORMERLY_DECEASED
                   ),
@@ -186,7 +187,7 @@ public class JsonDataTest {
                         "Earth-616",
                         createCreation(
                               "Joe Simon, Jack Kirby",
-                              "Captain America Comics #1 (December, 1940)"
+                              Appearance.of("Captain America Comics #1", "December, 1940")
                         ),
                         ALIVE, FORMERLY_DECEASED
                   ),
@@ -200,7 +201,7 @@ public class JsonDataTest {
                         "Earth-616",
                         createCreation(
                               "Dan Slott, Phil Jimenez",
-                              "Free Comic Book Day 2007 (Spider-Man) #1 (May, 2007)"
+                              Appearance.of("Free Comic Book Day 2007 (Spider-Man) #1", "May, 2007")
                         ),
                         ALIVE
                   ),
@@ -214,9 +215,9 @@ public class JsonDataTest {
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Steve Ditko",
-                              "Amazing Spider-Man #3 (April, 1963) (As Doctor Octopus)",
-                              "Amazing Spider-Man #697 (November, 2012) (As Spider-Man)",
-                              "Amazing Spider-Man (Vol. 4) #25 (March, 2017) (As Superior Octopus)"
+                              Appearance.of("Amazing Spider-Man #3", "April, 1963", "Doctor Octopus"),
+                              Appearance.of("Amazing Spider-Man #697", "November, 2012", "Spider-Man"),
+                              Appearance.of("Amazing Spider-Man (Vol. 4) #25", "March, 2017", "Superior Octopus")
                         ),
                         ALIVE, FORMERLY_DECEASED
                   ),
@@ -230,9 +231,9 @@ public class JsonDataTest {
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Steve Ditko",
-                              "Amazing Spider-Man #3 (April, 1963) (As Doctor Octopus)",
-                              "Amazing Spider-Man #697 (November, 2012) (As Spider-Man)",
-                              "Amazing Spider-Man (Vol. 4) #25 (March, 2017) (As Superior Octopus)"
+                              Appearance.of("Amazing Spider-Man #3", "April, 1963", "Doctor Octopus"),
+                              Appearance.of("Amazing Spider-Man #697", "November, 2012", "Spider-Man"),
+                              Appearance.of("Amazing Spider-Man (Vol. 4) #25", "March, 2017", "Superior Octopus")
                         ),
                         DECEASED
                   ),
@@ -246,7 +247,7 @@ public class JsonDataTest {
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Jack Kirby",
-                              "Tales to Astonish #81 (April, 1966)"
+                              Appearance.of("Tales to Astonish #81", "April, 1966")
                         ),
                         DECEASED
                   ),
@@ -260,7 +261,7 @@ public class JsonDataTest {
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Jack Kirby",
-                              "Amazing Spider-Man #2 (February, 1963)"
+                              Appearance.of("Amazing Spider-Man #2", "February, 1963")
                         ),
                         ALIVE
                   ),
@@ -274,7 +275,7 @@ public class JsonDataTest {
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Steve Ditko",
-                              "Amazing Spider-Man #9 (November, 1963)"
+                              Appearance.of("Amazing Spider-Man #9", "November, 1963")
                         ),
                         ALIVE, FORMERLY_DECEASED
                   ),
@@ -288,7 +289,7 @@ public class JsonDataTest {
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Steve Ditko",
-                              "Amazing Spider-Man #15 (May, 1964)"
+                              Appearance.of("Amazing Spider-Man #15", "May, 1964")
                         ),
                         DECEASED
                   ),
@@ -302,8 +303,8 @@ public class JsonDataTest {
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Steve Ditko",
-                              "Amazing Spider-Man #2 (February, 1963) (As Quentin Beck)",
-                              "Amazing Spider-Man #13 (March, 1964) (As Mysterio)"
+                              Appearance.of("Amazing Spider-Man #2", "February, 1963", "Quentin Beck"),
+                              Appearance.of("Amazing Spider-Man #13", "March, 1964", "Mysterio")
                         ),
                         ALIVE, FORMERLY_DECEASED
                   ),
@@ -317,7 +318,7 @@ public class JsonDataTest {
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Steve Ditko",
-                              "Amazing Spider-Man #4 (June, 1963)"
+                              Appearance.of("Amazing Spider-Man #4", "June, 1963")
                         ),
                         ALIVE
                   ),
@@ -330,11 +331,12 @@ public class JsonDataTest {
                   createArtInformation(
                         "Earth-616",
                         createCreation(
-                              "Gerry Conway, Ross Andru", "Amazing Spider-Man #149 (July, 1975) (As Spider-Clone)",
-                              "Spider-Man #52 (September, 1994) (As Scarlet Spider)",
-                              "Sensational Spider-Man #0 (January, 1996) (As Spider-Man)",
-                              "Free Comic Book Day 2016 (Captain America) #1 (May, 2016) (As The Jackal)",
-                              "Amazing Spider-Man (Vol. 5) #93 (March, 2022) (As Chasm)"
+                              "Gerry Conway, Ross Andru",
+                              Appearance.of("Amazing Spider-Man #149", "July, 1975", "Spider-Clone"),
+                              Appearance.of("Spider-Man #52", "September, 1994", "Scarlet Spider"),
+                              Appearance.of("Sensational Spider-Man #0", "January, 1996", "Spider-Man"),
+                              Appearance.of("Free Comic Book Day 2016 (Captain America) #1", "May, 2016", "The Jackal"),
+                              Appearance.of("Amazing Spider-Man (Vol. 5) #93", "March, 2022", "Chasm")
                         ),
                         ALIVE, FORMERLY_DECEASED
                   ),
@@ -348,7 +350,7 @@ public class JsonDataTest {
                         "Earth-616",
                         createCreation(
                               "Kieron Gillen, Stephanie Hans",
-                              "Journey Into Mystery #622 (April, 2011)"
+                              Appearance.of("Journey Into Mystery #622", "April, 2011")
                         ),
                         ALIVE
                   ),
@@ -375,8 +377,7 @@ public class JsonDataTest {
       );
    }
 
-   private static Creation createCreation(String creators, String... appearances) {
-
+   private static Creation createCreation(String creators, Appearance... appearances) {
       return Creation.of(
             Arrays.stream(creators.split(",")).toList(),
             Arrays.stream(appearances).toList()
