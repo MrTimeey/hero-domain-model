@@ -28,7 +28,8 @@ class CreationAssertTest {
             .doesNotHaveCreator("Tim")
             .hasFirstAppearance(Appearance.of("Incredible Hulk #1", "March, 1962"))
             .hasOnlyFirstAppearance(Appearance.of("Incredible Hulk #1", "March, 1962"))
-            .doesNotHaveFirstAppearance(Appearance.of("Avenging Spider-Man #9", "July, 2012"));
+            .doesNotHaveFirstAppearance(Appearance.of("Avenging Spider-Man #9", "July, 2012"))
+            .containsAppearanceValue("Incredible Hulk #1", Appearance::title);
    }
 
    @Test

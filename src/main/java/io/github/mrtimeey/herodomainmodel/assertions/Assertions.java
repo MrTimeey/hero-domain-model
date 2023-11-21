@@ -1,5 +1,6 @@
 package io.github.mrtimeey.herodomainmodel.assertions;
 
+import io.github.mrtimeey.herodomainmodel.model.Appearance;
 import io.github.mrtimeey.herodomainmodel.model.ArtInformation;
 import io.github.mrtimeey.herodomainmodel.model.Creation;
 import io.github.mrtimeey.herodomainmodel.model.PersonalInformation;
@@ -25,6 +26,10 @@ public class Assertions {
 
    public static PersonalInformationAssert assertThat(PersonalInformation personalInformation) {
       return new PersonalInformationAssert(personalInformation);
+   }
+
+   public static AppearanceAssert assertThat(Appearance appearance) {
+      return new AppearanceAssert(appearance);
    }
 
 }

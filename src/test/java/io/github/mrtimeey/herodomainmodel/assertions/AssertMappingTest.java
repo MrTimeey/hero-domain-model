@@ -59,7 +59,7 @@ class AssertMappingTest {
             .hasCreator("Stan Lee", "Jack Kirby")
             .hasFirstAppearance(Appearance.of("Incredible Hulk #1", "March, 1962"))
             .hasOnlyFirstAppearance(Appearance.of("Incredible Hulk #1", "March, 1962"))
-            .mapToAppearance()
+            .mapToArtInformation()
             .mapToSuperHero()
             .mapToPersonalInformation()
             .hasIdentity(PUBLIC)
@@ -69,7 +69,7 @@ class AssertMappingTest {
    @Test
    void testMappingError_creationAssert() {
       try {
-         Assertions.assertThat(hero.artInformation().creation()).mapToAppearance();
+         Assertions.assertThat(hero.artInformation().creation()).mapToArtInformation();
       } catch (AssertionError e) {
          return;
       }

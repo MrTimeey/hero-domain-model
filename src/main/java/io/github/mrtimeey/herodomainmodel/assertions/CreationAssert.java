@@ -5,6 +5,9 @@ import io.github.mrtimeey.herodomainmodel.model.Creation;
 import org.assertj.core.api.AbstractObjectAssert;
 import org.assertj.core.api.Assertions;
 
+import java.util.function.Consumer;
+import java.util.function.Function;
+
 public class CreationAssert extends AbstractObjectAssert<CreationAssert, Creation> {
 
    private ArtInformationAssert savedAppearance;
@@ -21,6 +24,14 @@ public class CreationAssert extends AbstractObjectAssert<CreationAssert, Creatio
    public CreationAssert hasCreator(String... creators) {
       isNotNull();
       Assertions.assertThat(actual.creators()).contains(creators);
+      return this;
+   }
+
+   public CreationAssert containsAppearanceValue(String value, Function<Appearance, String> mappingFunction) {
+      isNotNull();
+      Assertions.assertThat(actual.firstAppearances())
+            .map(mappingFunction)
+            .contains(value);
       return this;
    }
 
@@ -66,7 +77,7 @@ public class CreationAssert extends AbstractObjectAssert<CreationAssert, Creatio
       return this;
    }
 
-   public ArtInformationAssert mapToAppearance() {
+   public ArtInformationAssert mapToArtInformation() {
       if (savedAppearance == null) {
          failWithMessage("Invalid use of mapping! Can only be called if Appearance was visited!");
       }
