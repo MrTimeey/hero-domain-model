@@ -15,8 +15,8 @@ public class Assertions {
       return new SuperHeroAssert(superHero);
    }
 
-   public static AppearanceAssert assertThat(ArtInformation artInformation) {
-      return new AppearanceAssert(artInformation);
+   public static ArtInformationAssert assertThat(ArtInformation artInformation) {
+      return new ArtInformationAssert(artInformation);
    }
 
    public static CreationAssert assertThat(Creation creation) {

@@ -6,50 +6,50 @@ import io.github.mrtimeey.herodomainmodel.model.LivingStatus;
 import org.assertj.core.api.AbstractObjectAssert;
 import org.assertj.core.api.Assertions;
 
-public class AppearanceAssert extends AbstractObjectAssert<AppearanceAssert, ArtInformation> {
+public class ArtInformationAssert extends AbstractObjectAssert<ArtInformationAssert, ArtInformation> {
 
    private SuperHeroAssert savedSuperHero;
 
-   public AppearanceAssert(ArtInformation actual) {
-      super(actual, AppearanceAssert.class);
+   public ArtInformationAssert(ArtInformation actual) {
+      super(actual, ArtInformationAssert.class);
    }
 
-   public AppearanceAssert(ArtInformation actual, SuperHeroAssert superHero) {
-      super(actual, AppearanceAssert.class);
+   public ArtInformationAssert(ArtInformation actual, SuperHeroAssert superHero) {
+      super(actual, ArtInformationAssert.class);
       savedSuperHero = superHero;
    }
 
-   public AppearanceAssert hasReality(String reality) {
+   public ArtInformationAssert hasReality(String reality) {
       isNotNull();
       Assertions.assertThat(actual.reality()).isEqualTo(reality);
       return this;
    }
 
-   public AppearanceAssert hasCreation(Creation creation) {
+   public ArtInformationAssert hasCreation(Creation creation) {
       isNotNull();
       Assertions.assertThat(actual.creation()).isEqualTo(creation);
       return this;
    }
 
-   public AppearanceAssert hasLivingStatus(LivingStatus... livingStatuses) {
+   public ArtInformationAssert hasLivingStatus(LivingStatus... livingStatuses) {
       isNotNull();
       Assertions.assertThat(actual.livingStatuses()).contains(livingStatuses);
       return this;
    }
 
-   public AppearanceAssert hasOnlyLivingStatus(LivingStatus... livingStatuses) {
+   public ArtInformationAssert hasOnlyLivingStatus(LivingStatus... livingStatuses) {
       isNotNull();
       Assertions.assertThat(actual.livingStatuses()).containsExactly(livingStatuses);
       return this;
    }
 
-   public AppearanceAssert doesNotHaveLivingStatus(LivingStatus... livingStatuses) {
+   public ArtInformationAssert doesNotHaveLivingStatus(LivingStatus... livingStatuses) {
       isNotNull();
       Assertions.assertThat(actual.livingStatuses()).doesNotContain(livingStatuses);
       return this;
    }
 
-   public AppearanceAssert hasNoLivingStatus() {
+   public ArtInformationAssert hasNoLivingStatus() {
       isNotNull();
       Assertions.assertThat(actual.livingStatuses()).isEmpty();
       return this;

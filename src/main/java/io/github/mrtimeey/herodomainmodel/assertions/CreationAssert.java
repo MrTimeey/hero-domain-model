@@ -7,13 +7,13 @@ import org.assertj.core.api.Assertions;
 
 public class CreationAssert extends AbstractObjectAssert<CreationAssert, Creation> {
 
-   private AppearanceAssert savedAppearance;
+   private ArtInformationAssert savedAppearance;
 
    public CreationAssert(Creation actual) {
       super(actual, CreationAssert.class);
    }
 
-   public CreationAssert(Creation actual, AppearanceAssert appearance) {
+   public CreationAssert(Creation actual, ArtInformationAssert appearance) {
       super(actual, CreationAssert.class);
       savedAppearance = appearance;
    }
@@ -66,7 +66,7 @@ public class CreationAssert extends AbstractObjectAssert<CreationAssert, Creatio
       return this;
    }
 
-   public AppearanceAssert mapToAppearance() {
+   public ArtInformationAssert mapToAppearance() {
       if (savedAppearance == null) {
          failWithMessage("Invalid use of mapping! Can only be called if Appearance was visited!");
       }

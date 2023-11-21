@@ -43,8 +43,8 @@ public class SuperHeroAssert extends AbstractObjectAssert<SuperHeroAssert, Super
       return this;
    }
 
-   public AppearanceAssert mapToAppearance() {
-      return new AppearanceAssert(actual.artInformation(), this);
+   public ArtInformationAssert mapToAppearance() {
+      return new ArtInformationAssert(actual.artInformation(), this);
    }
 
    public PersonalInformationAssert mapToPersonalInformation() {
