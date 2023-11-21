@@ -24,6 +24,7 @@ final class DataLoader {
    }
 
    private static List<SuperHero> parseInputStream(InputStream resource) throws IOException {
+      if (resource == null) return List.of();
       String inputObject = IOUtils.toString(resource, StandardCharsets.UTF_8);
       TypeReference<List<SuperHero>> typeReference = new TypeReference<>() {
       };
