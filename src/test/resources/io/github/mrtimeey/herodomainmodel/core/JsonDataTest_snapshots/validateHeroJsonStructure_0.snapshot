@@ -8,7 +8,7 @@ test-method: validateHeroJsonStructure
   "name" : "Carol Susan Jane Denvers",
   "currentAlias" : "Captain Marvel",
   "gender" : "FEMALE",
-  "appearance" : {
+  "artInformation" : {
     "reality" : "Earth-616",
     "creation" : {
       "creators" : [ "Roy Thomas", " Gene Colan" ],
@@ -24,7 +24,7 @@ test-method: validateHeroJsonStructure
   "name" : "Peter Benjamin Parker",
   "currentAlias" : "Spider-Man",
   "gender" : "MALE",
-  "appearance" : {
+  "artInformation" : {
     "reality" : "Earth-616",
     "creation" : {
       "creators" : [ "Stan Lee", " Steve Ditko" ],
@@ -40,7 +40,7 @@ test-method: validateHeroJsonStructure
   "name" : "Dr. Robert Bruce Banner",
   "currentAlias" : "Hulk",
   "gender" : "MALE",
-  "appearance" : {
+  "artInformation" : {
     "reality" : "Earth-616",
     "creation" : {
       "creators" : [ "Stan Lee", " Jack Kirby" ],
@@ -56,7 +56,7 @@ test-method: validateHeroJsonStructure
   "name" : "Thor Odinson",
   "currentAlias" : "Thor",
   "gender" : "MALE",
-  "appearance" : {
+  "artInformation" : {
     "reality" : "Earth-616",
     "creation" : {
       "creators" : [ "Don Rico", " Hy Rosen", " Stan Lee", " Jack Kirby", " Larry Lieber" ],
@@ -72,7 +72,7 @@ test-method: validateHeroJsonStructure
   "name" : "Anthony Edward 'Tony' Stark",
   "currentAlias" : "Iron Man",
   "gender" : "MALE",
-  "appearance" : {
+  "artInformation" : {
     "reality" : "Earth-616",
     "creation" : {
       "creators" : [ "Stan Lee", " Larry Lieber", " Don Heck", " Jack Kirby" ],
@@ -88,7 +88,7 @@ test-method: validateHeroJsonStructure
   "name" : "Janet Van Dyne",
   "currentAlias" : "Wasp",
   "gender" : "FEMALE",
-  "appearance" : {
+  "artInformation" : {
     "reality" : "Earth-616",
     "creation" : {
       "creators" : [ "Stan Lee", " Ernest Hart", " Jack Kirby" ],
@@ -104,7 +104,7 @@ test-method: validateHeroJsonStructure
   "name" : "Scott Edward Harris Lang",
   "currentAlias" : "Ant-Man",
   "gender" : "MALE",
-  "appearance" : {
+  "artInformation" : {
     "reality" : "Earth-616",
     "creation" : {
       "creators" : [ "David Michelinie", " John Byrne" ],
@@ -120,7 +120,7 @@ test-method: validateHeroJsonStructure
   "name" : "Clinton Francis 'Clint' Barton",
   "currentAlias" : "Hawkeye",
   "gender" : "MALE",
-  "appearance" : {
+  "artInformation" : {
     "reality" : "Earth-616",
     "creation" : {
       "creators" : [ "Stan Lee", " Don Heck" ],
@@ -136,7 +136,7 @@ test-method: validateHeroJsonStructure
   "name" : "Wanda Django Maximoff",
   "currentAlias" : "Scarlet Witch",
   "gender" : "FEMALE",
-  "appearance" : {
+  "artInformation" : {
     "reality" : "Earth-616",
     "creation" : {
       "creators" : [ "Stan Lee", " Jack Kirby" ],
@@ -152,7 +152,7 @@ test-method: validateHeroJsonStructure
   "name" : "Natalia Alianovna 'Natasha' Romanova",
   "currentAlias" : "Black Widow",
   "gender" : "FEMALE",
-  "appearance" : {
+  "artInformation" : {
     "reality" : "Earth-616",
     "creation" : {
       "creators" : [ "Stan Lee", " Don Rico", " Don Heck" ],
@@ -168,7 +168,7 @@ test-method: validateHeroJsonStructure
   "name" : "Steven Grant 'Steve' Rogers",
   "currentAlias" : "Captain America",
   "gender" : "MALE",
-  "appearance" : {
+  "artInformation" : {
     "reality" : "Earth-616",
     "creation" : {
       "creators" : [ "Joe Simon", " Jack Kirby" ],
@@ -184,7 +184,7 @@ test-method: validateHeroJsonStructure
   "name" : "Unrevealed",
   "currentAlias" : "Mister Negative",
   "gender" : "MALE",
-  "appearance" : {
+  "artInformation" : {
     "reality" : "Earth-616",
     "creation" : {
       "creators" : [ "Dan Slott", " Phil Jimenez" ],
@@ -200,7 +200,7 @@ test-method: validateHeroJsonStructure
   "name" : "Dr. Otto Gunther Octavius",
   "currentAlias" : "Doctor Octopus",
   "gender" : "MALE",
-  "appearance" : {
+  "artInformation" : {
     "reality" : "Earth-616",
     "creation" : {
       "creators" : [ "Stan Lee", " Steve Ditko" ],
@@ -216,7 +216,7 @@ test-method: validateHeroJsonStructure
   "name" : "Jason Philip Macendale, Jr.",
   "currentAlias" : "Hobgoblin",
   "gender" : "MALE",
-  "appearance" : {
+  "artInformation" : {
     "reality" : "Earth-616",
     "creation" : {
       "creators" : [ "Stan Lee", " Steve Ditko" ],
@@ -232,7 +232,7 @@ test-method: validateHeroJsonStructure
   "name" : "Frederick 'Fred' Myers",
   "currentAlias" : "Boomerang",
   "gender" : "MALE",
-  "appearance" : {
+  "artInformation" : {
     "reality" : "Earth-616",
     "creation" : {
       "creators" : [ "Stan Lee", " Jack Kirby" ],
@@ -248,7 +248,7 @@ test-method: validateHeroJsonStructure
   "name" : "Adrian Toomes",
   "currentAlias" : "Vulture",
   "gender" : "MALE",
-  "appearance" : {
+  "artInformation" : {
     "reality" : "Earth-616",
     "creation" : {
       "creators" : [ "Stan Lee", " Jack Kirby" ],
@@ -264,7 +264,7 @@ test-method: validateHeroJsonStructure
   "name" : "Maxwell 'Max' Dillon",
   "currentAlias" : "Electro",
   "gender" : "MALE",
-  "appearance" : {
+  "artInformation" : {
     "reality" : "Earth-616",
     "creation" : {
       "creators" : [ "Stan Lee", " Steve Ditko" ],
@@ -280,7 +280,7 @@ test-method: validateHeroJsonStructure
   "name" : "Sergei Nikolaevich Kravinoff",
   "currentAlias" : "Kraven the Hunter",
   "gender" : "MALE",
-  "appearance" : {
+  "artInformation" : {
     "reality" : "Earth-616",
     "creation" : {
       "creators" : [ "Stan Lee", " Steve Ditko" ],
@@ -296,7 +296,7 @@ test-method: validateHeroJsonStructure
   "name" : "Quentin Beck",
   "currentAlias" : "Mysterio",
   "gender" : "MALE",
-  "appearance" : {
+  "artInformation" : {
     "reality" : "Earth-616",
     "creation" : {
       "creators" : [ "Stan Lee", " Steve Ditko" ],
@@ -312,7 +312,7 @@ test-method: validateHeroJsonStructure
   "name" : "William Baker",
   "currentAlias" : "Sandman",
   "gender" : "MALE",
-  "appearance" : {
+  "artInformation" : {
     "reality" : "Earth-616",
     "creation" : {
       "creators" : [ "Stan Lee", " Steve Ditko" ],
@@ -328,7 +328,7 @@ test-method: validateHeroJsonStructure
   "name" : "Benjamin 'Ben' Reilly",
   "currentAlias" : "Chasm",
   "gender" : "MALE",
-  "appearance" : {
+  "artInformation" : {
     "reality" : "Earth-616",
     "creation" : {
       "creators" : [ "Gerry Conway", " Ross Andru" ],
@@ -344,7 +344,7 @@ test-method: validateHeroJsonStructure
   "name" : "Loki Laufeyson",
   "currentAlias" : "Loki",
   "gender" : "FLUID",
-  "appearance" : {
+  "artInformation" : {
     "reality" : "Earth-616",
     "creation" : {
       "creators" : [ "Kieron Gillen", " Stephanie Hans" ],

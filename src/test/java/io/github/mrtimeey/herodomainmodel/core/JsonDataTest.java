@@ -3,7 +3,7 @@ package io.github.mrtimeey.herodomainmodel.core;
 import de.skuzzle.test.snapshots.Snapshot;
 import de.skuzzle.test.snapshots.data.json.JsonSnapshot;
 import de.skuzzle.test.snapshots.junit5.EnableSnapshotTests;
-import io.github.mrtimeey.herodomainmodel.model.Appearance;
+import io.github.mrtimeey.herodomainmodel.model.ArtInformation;
 import io.github.mrtimeey.herodomainmodel.model.Creation;
 import io.github.mrtimeey.herodomainmodel.model.Gender;
 import io.github.mrtimeey.herodomainmodel.model.Identity;
@@ -37,7 +37,7 @@ public class JsonDataTest {
                   "Carol Susan Jane Denvers",
                   "Captain Marvel",
                   Gender.FEMALE,
-                  createAppearance(
+                  createArtInformation(
                         "Earth-616",
                         createCreation(
                               "Roy Thomas, Gene Colan",
@@ -54,7 +54,7 @@ public class JsonDataTest {
                   "Peter Benjamin Parker",
                   "Spider-Man",
                   Gender.MALE,
-                  createAppearance(
+                  createArtInformation(
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Steve Ditko",
@@ -68,7 +68,7 @@ public class JsonDataTest {
                   "Dr. Robert Bruce Banner",
                   "Hulk",
                   Gender.MALE,
-                  createAppearance(
+                  createArtInformation(
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Jack Kirby",
@@ -82,7 +82,7 @@ public class JsonDataTest {
                   "Thor Odinson",
                   "Thor",
                   Gender.MALE,
-                  createAppearance(
+                  createArtInformation(
                         "Earth-616",
                         createCreation(
                               "Don Rico, Hy Rosen, Stan Lee, Jack Kirby, Larry Lieber",
@@ -96,7 +96,7 @@ public class JsonDataTest {
                         "'Tony' Stark",
                   "Iron Man",
                   Gender.MALE,
-                  createAppearance(
+                  createArtInformation(
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Larry Lieber, Don Heck, Jack Kirby",
@@ -110,7 +110,7 @@ public class JsonDataTest {
                   "Janet Van Dyne",
                   "Wasp",
                   Gender.FEMALE,
-                  createAppearance(
+                  createArtInformation(
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Ernest Hart, Jack Kirby",
@@ -124,7 +124,7 @@ public class JsonDataTest {
                   "Scott Edward Harris Lang",
                   "Ant-Man",
                   Gender.MALE,
-                  createAppearance(
+                  createArtInformation(
                         "Earth-616",
                         createCreation(
                               "David Michelinie, John Byrne",
@@ -138,7 +138,7 @@ public class JsonDataTest {
                   "Clinton Francis 'Clint' Barton",
                   "Hawkeye",
                   Gender.MALE,
-                  createAppearance(
+                  createArtInformation(
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Don Heck",
@@ -154,7 +154,7 @@ public class JsonDataTest {
                   "Wanda Django Maximoff",
                   "Scarlet Witch",
                   Gender.FEMALE,
-                  createAppearance(
+                  createArtInformation(
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Jack Kirby",
@@ -168,7 +168,7 @@ public class JsonDataTest {
                   "Natalia Alianovna 'Natasha' Romanova",
                   "Black Widow",
                   Gender.FEMALE,
-                  createAppearance(
+                  createArtInformation(
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Don Rico, Don Heck",
@@ -182,7 +182,7 @@ public class JsonDataTest {
                   "Steven Grant 'Steve' Rogers",
                   "Captain America",
                   Gender.MALE,
-                  createAppearance(
+                  createArtInformation(
                         "Earth-616",
                         createCreation(
                               "Joe Simon, Jack Kirby",
@@ -196,7 +196,7 @@ public class JsonDataTest {
                   "Unrevealed",
                   "Mister Negative",
                   Gender.MALE,
-                  createAppearance(
+                  createArtInformation(
                         "Earth-616",
                         createCreation(
                               "Dan Slott, Phil Jimenez",
@@ -210,7 +210,7 @@ public class JsonDataTest {
                   "Dr. Otto Gunther Octavius",
                   "Doctor Octopus",
                   Gender.MALE,
-                  createAppearance(
+                  createArtInformation(
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Steve Ditko",
@@ -226,7 +226,7 @@ public class JsonDataTest {
                   "Jason Philip Macendale, Jr.",
                   "Hobgoblin",
                   Gender.MALE,
-                  createAppearance(
+                  createArtInformation(
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Steve Ditko",
@@ -242,7 +242,7 @@ public class JsonDataTest {
                   "Frederick 'Fred' Myers",
                   "Boomerang",
                   Gender.MALE,
-                  createAppearance(
+                  createArtInformation(
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Jack Kirby",
@@ -256,7 +256,7 @@ public class JsonDataTest {
                   "Adrian Toomes",
                   "Vulture",
                   Gender.MALE,
-                  createAppearance(
+                  createArtInformation(
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Jack Kirby",
@@ -270,7 +270,7 @@ public class JsonDataTest {
                   "Maxwell 'Max' Dillon",
                   "Electro",
                   Gender.MALE,
-                  createAppearance(
+                  createArtInformation(
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Steve Ditko",
@@ -284,7 +284,7 @@ public class JsonDataTest {
                   "Sergei Nikolaevich Kravinoff",
                   "Kraven the Hunter",
                   Gender.MALE,
-                  createAppearance(
+                  createArtInformation(
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Steve Ditko",
@@ -298,7 +298,7 @@ public class JsonDataTest {
                   "Quentin Beck",
                   "Mysterio",
                   Gender.MALE,
-                  createAppearance(
+                  createArtInformation(
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Steve Ditko",
@@ -313,7 +313,7 @@ public class JsonDataTest {
                   "William Baker",
                   "Sandman",
                   Gender.MALE,
-                  createAppearance(
+                  createArtInformation(
                         "Earth-616",
                         createCreation(
                               "Stan Lee, Steve Ditko",
@@ -327,7 +327,7 @@ public class JsonDataTest {
                   "Benjamin 'Ben' Reilly",
                   "Chasm",
                   Gender.MALE,
-                  createAppearance(
+                  createArtInformation(
                         "Earth-616",
                         createCreation(
                               "Gerry Conway, Ross Andru", "Amazing Spider-Man #149 (July, 1975) (As Spider-Clone)",
@@ -344,7 +344,7 @@ public class JsonDataTest {
                   "Loki Laufeyson",
                   "Loki",
                   Gender.FLUID,
-                  createAppearance(
+                  createArtInformation(
                         "Earth-616",
                         createCreation(
                               "Kieron Gillen, Stephanie Hans",
@@ -357,18 +357,18 @@ public class JsonDataTest {
       );
    }
 
-   private static SuperHero createSuperHero(String name, String currentAlias, Gender gender, Appearance appearance, PersonalInformation personalInformation) {
+   private static SuperHero createSuperHero(String name, String currentAlias, Gender gender, ArtInformation artInformation, PersonalInformation personalInformation) {
       return SuperHero.of(
             name,
             currentAlias,
             gender,
-            appearance,
+            artInformation,
             personalInformation
       );
    }
 
-   private static Appearance createAppearance(String reality, Creation creation, LivingStatus... livingStatuses) {
-      return Appearance.of(
+   private static ArtInformation createArtInformation(String reality, Creation creation, LivingStatus... livingStatuses) {
+      return ArtInformation.of(
             reality,
             creation,
             livingStatuses

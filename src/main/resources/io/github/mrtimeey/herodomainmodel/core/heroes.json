@@ -3,7 +3,7 @@
     "name": "Carol Susan Jane Denvers",
     "currentAlias": "Captain Marvel",
     "gender": "FEMALE",
-    "appearance": {
+    "artInformation": {
       "reality": "Earth-616",
       "creation": {
         "creators": [
@@ -32,7 +32,7 @@
     "name": "Peter Benjamin Parker",
     "currentAlias": "Spider-Man",
     "gender": "MALE",
-    "appearance": {
+    "artInformation": {
       "reality": "Earth-616",
       "creation": {
         "creators": [
@@ -57,7 +57,7 @@
     "name": "Dr. Robert Bruce Banner",
     "currentAlias": "Hulk",
     "gender": "MALE",
-    "appearance": {
+    "artInformation": {
       "reality": "Earth-616",
       "creation": {
         "creators": [
@@ -82,7 +82,7 @@
     "name": "Thor Odinson",
     "currentAlias": "Thor",
     "gender": "MALE",
-    "appearance": {
+    "artInformation": {
       "reality": "Earth-616",
       "creation": {
         "creators": [
@@ -111,7 +111,7 @@
     "name": "Anthony Edward 'Tony' Stark",
     "currentAlias": "Iron Man",
     "gender": "MALE",
-    "appearance": {
+    "artInformation": {
       "reality": "Earth-616",
       "creation": {
         "creators": [
@@ -138,7 +138,7 @@
     "name": "Janet Van Dyne",
     "currentAlias": "Wasp",
     "gender": "FEMALE",
-    "appearance": {
+    "artInformation": {
       "reality": "Earth-616",
       "creation": {
         "creators": [
@@ -164,7 +164,7 @@
     "name": "Scott Edward Harris Lang",
     "currentAlias": "Ant-Man",
     "gender": "MALE",
-    "appearance": {
+    "artInformation": {
       "reality": "Earth-616",
       "creation": {
         "creators": [
@@ -190,7 +190,7 @@
     "name": "Clinton Francis 'Clint' Barton",
     "currentAlias": "Hawkeye",
     "gender": "MALE",
-    "appearance": {
+    "artInformation": {
       "reality": "Earth-616",
       "creation": {
         "creators": [
@@ -218,7 +218,7 @@
     "name": "Wanda Django Maximoff",
     "currentAlias": "Scarlet Witch",
     "gender": "FEMALE",
-    "appearance": {
+    "artInformation": {
       "reality": "Earth-616",
       "creation": {
         "creators": [
@@ -243,7 +243,7 @@
     "name": "Natalia Alianovna 'Natasha' Romanova",
     "currentAlias": "Black Widow",
     "gender": "FEMALE",
-    "appearance": {
+    "artInformation": {
       "reality": "Earth-616",
       "creation": {
         "creators": [
@@ -269,7 +269,7 @@
     "name": "Steven Grant 'Steve' Rogers",
     "currentAlias": "Captain America",
     "gender": "MALE",
-    "appearance": {
+    "artInformation": {
       "reality": "Earth-616",
       "creation": {
         "creators": [
@@ -294,7 +294,7 @@
     "name": "Unrevealed",
     "currentAlias": "Mister Negative",
     "gender": "MALE",
-    "appearance": {
+    "artInformation": {
       "reality": "Earth-616",
       "creation": {
         "creators": [
@@ -318,7 +318,7 @@
     "name": "Dr. Otto Gunther Octavius",
     "currentAlias": "Doctor Octopus",
     "gender": "MALE",
-    "appearance": {
+    "artInformation": {
       "reality": "Earth-616",
       "creation": {
         "creators": [
@@ -345,7 +345,7 @@
     "name": "Jason Philip Macendale, Jr.",
     "currentAlias": "Hobgoblin",
     "gender": "MALE",
-    "appearance": {
+    "artInformation": {
       "reality": "Earth-616",
       "creation": {
         "creators": [
@@ -371,7 +371,7 @@
     "name": "Frederick 'Fred' Myers",
     "currentAlias": "Boomerang",
     "gender": "MALE",
-    "appearance": {
+    "artInformation": {
       "reality": "Earth-616",
       "creation": {
         "creators": [
@@ -395,7 +395,7 @@
     "name": "Adrian Toomes",
     "currentAlias": "Vulture",
     "gender": "MALE",
-    "appearance": {
+    "artInformation": {
       "reality": "Earth-616",
       "creation": {
         "creators": [
@@ -419,7 +419,7 @@
     "name": "Maxwell 'Max' Dillon",
     "currentAlias": "Electro",
     "gender": "MALE",
-    "appearance": {
+    "artInformation": {
       "reality": "Earth-616",
       "creation": {
         "creators": [
@@ -444,7 +444,7 @@
     "name": "Sergei Nikolaevich Kravinoff",
     "currentAlias": "Kraven the Hunter",
     "gender": "MALE",
-    "appearance": {
+    "artInformation": {
       "reality": "Earth-616",
       "creation": {
         "creators": [
@@ -468,7 +468,7 @@
     "name": "Quentin Beck",
     "currentAlias": "Mysterio",
     "gender": "MALE",
-    "appearance": {
+    "artInformation": {
       "reality": "Earth-616",
       "creation": {
         "creators": [
@@ -494,7 +494,7 @@
     "name": "William Baker",
     "currentAlias": "Sandman",
     "gender": "MALE",
-    "appearance": {
+    "artInformation": {
       "reality": "Earth-616",
       "creation": {
         "creators": [
@@ -518,7 +518,7 @@
     "name": "Benjamin 'Ben' Reilly",
     "currentAlias": "Chasm",
     "gender": "MALE",
-    "appearance": {
+    "artInformation": {
       "reality": "Earth-616",
       "creation": {
         "creators": [
@@ -547,7 +547,7 @@
     "name": "Loki Laufeyson",
     "currentAlias": "Loki",
     "gender": "FLUID",
-    "appearance": {
+    "artInformation": {
       "reality": "Earth-616",
       "creation": {
         "creators": [

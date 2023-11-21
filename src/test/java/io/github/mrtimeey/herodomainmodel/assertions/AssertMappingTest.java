@@ -1,6 +1,6 @@
 package io.github.mrtimeey.herodomainmodel.assertions;
 
-import io.github.mrtimeey.herodomainmodel.model.Appearance;
+import io.github.mrtimeey.herodomainmodel.model.ArtInformation;
 import io.github.mrtimeey.herodomainmodel.model.Creation;
 import io.github.mrtimeey.herodomainmodel.model.Gender;
 import io.github.mrtimeey.herodomainmodel.model.Identity;
@@ -27,7 +27,7 @@ class AssertMappingTest {
             "Dr. Robert Bruce Banner",
             "Hulk",
             Gender.MALE,
-            Appearance.of(
+            ArtInformation.of(
                   "Earth-616",
                   Creation.of(
                         List.of("Stan Lee", "Jack Kirby"),
@@ -68,7 +68,7 @@ class AssertMappingTest {
    @Test
    void testMappingError_creationAssert() {
       try {
-         Assertions.assertThat(hero.appearance().creation()).mapToAppearance();
+         Assertions.assertThat(hero.artInformation().creation()).mapToAppearance();
       } catch (AssertionError e) {
          return;
       }
@@ -78,7 +78,7 @@ class AssertMappingTest {
    @Test
    void testMappingError_appearanceAssert() {
       try {
-         Assertions.assertThat(hero.appearance()).mapToSuperHero();
+         Assertions.assertThat(hero.artInformation()).mapToSuperHero();
       } catch (AssertionError e) {
          return;
       }

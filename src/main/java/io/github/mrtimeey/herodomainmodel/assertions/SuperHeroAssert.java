@@ -1,6 +1,6 @@
 package io.github.mrtimeey.herodomainmodel.assertions;
 
-import io.github.mrtimeey.herodomainmodel.model.Appearance;
+import io.github.mrtimeey.herodomainmodel.model.ArtInformation;
 import io.github.mrtimeey.herodomainmodel.model.Gender;
 import io.github.mrtimeey.herodomainmodel.model.PersonalInformation;
 import io.github.mrtimeey.herodomainmodel.model.SuperHero;
@@ -37,14 +37,14 @@ public class SuperHeroAssert extends AbstractObjectAssert<SuperHeroAssert, Super
       return this;
    }
 
-   public SuperHeroAssert hasAppearance(Appearance appearance) {
+   public SuperHeroAssert hasAppearance(ArtInformation artInformation) {
       isNotNull();
-      Assertions.assertThat(actual.appearance()).isEqualTo(appearance);
+      Assertions.assertThat(actual.artInformation()).isEqualTo(artInformation);
       return this;
    }
 
    public AppearanceAssert mapToAppearance() {
-      return new AppearanceAssert(actual.appearance(), this);
+      return new AppearanceAssert(actual.artInformation(), this);
    }
 
    public PersonalInformationAssert mapToPersonalInformation() {

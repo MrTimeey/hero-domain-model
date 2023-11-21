@@ -1,20 +1,20 @@
 package io.github.mrtimeey.herodomainmodel.assertions;
 
-import io.github.mrtimeey.herodomainmodel.model.Appearance;
+import io.github.mrtimeey.herodomainmodel.model.ArtInformation;
 import io.github.mrtimeey.herodomainmodel.model.Creation;
 import io.github.mrtimeey.herodomainmodel.model.LivingStatus;
 import org.assertj.core.api.AbstractObjectAssert;
 import org.assertj.core.api.Assertions;
 
-public class AppearanceAssert extends AbstractObjectAssert<AppearanceAssert, Appearance> {
+public class AppearanceAssert extends AbstractObjectAssert<AppearanceAssert, ArtInformation> {
 
    private SuperHeroAssert savedSuperHero;
 
-   public AppearanceAssert(Appearance actual) {
+   public AppearanceAssert(ArtInformation actual) {
       super(actual, AppearanceAssert.class);
    }
 
-   public AppearanceAssert(Appearance actual, SuperHeroAssert superHero) {
+   public AppearanceAssert(ArtInformation actual, SuperHeroAssert superHero) {
       super(actual, AppearanceAssert.class);
       savedSuperHero = superHero;
    }
